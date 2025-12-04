@@ -27,7 +27,7 @@ function App() {
         <Route
           path="/contact"
           element={
-            <Box sx={{ minHeight: "77vh" }}>
+            <Box sx={{ minHeight: "75vh" }}>
               <Contact />
             </Box>
           }
