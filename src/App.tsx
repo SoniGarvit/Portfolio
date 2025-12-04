@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Box sx={{ minHeight: "80h" }}>
+      <Box sx={{ minHeight: "80vh" }}>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
