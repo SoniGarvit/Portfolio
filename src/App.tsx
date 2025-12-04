@@ -12,14 +12,27 @@ function App() {
   return (
     <>
       <Navbar />
-      <Box sx={{ minHeight: "80vh" }}>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes>
-      </Box>
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Box sx={{ minHeight: "81vh" }}>
+              <Home />
+            </Box>
+          }
+        ></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route
+          path="/contact"
+          element={
+            <Box sx={{ minHeight: "78vh" }}>
+              <Contact />
+            </Box>
+          }
+        ></Route>
+      </Routes>
       <Footer />
     </>
   );
